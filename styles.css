@@ -40,6 +40,28 @@
   right: 0;
 }
 
+
+body {
+  text-align: center;
+}
+
+input[type=submit] {
+
+  background-color:red;
+  color:white;
+  border:2px solid grey;
+  padding: 5px;
+  padding-left:10px;
+  padding-right:10px;
+  transition: 0.2s ease-in-out;
+}
+
+input[type=submit]:hover {
+
+  background-color:white;
+  color:red;
+}
+
 .bolder {
   background-color:#FF0000;
   color: white;

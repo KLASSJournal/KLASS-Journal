@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 <link rel="icon" href="kj.PNG">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <style>
 .header { grid-area: header;
          background-attachment: fixed;
@@ -27,10 +28,10 @@
 .grid-container {
   display: grid;
   grid-template-areas:
-    'navBar navBar navBar navBar navBar navBar'
-    'header header header header header header'
-    'articles articles articles articles articles articles'
-    'footer footer footer footer footer footer';
+    'navBar'
+    'header'
+    'articles'
+    'footer';
   grid-gap: 5px;
   background-color: white;
   padding: 10px;
@@ -106,15 +107,6 @@ li a:hover {
   background-color: #111;
 }
 
-@media (max-width: 1000px) {
-  .grid-container {
-    grid-template-areas:
-      'navBar navBar navBar navBar navBar navBar'
-      'header header header header header header'
-      'articles articles articles articles articles articles'
-      'footer footer footer footer footer footer';
-      }
-    }
 
 
 
@@ -134,7 +126,7 @@ iframe{
 .iframe1        {position:relative;}
 .iframe1 .ratio {display:block;width:100%;height:auto;}
 .iframe1 iframe {position:absolute;top:0;left:0;width:100%; height:3000px;}
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   #updater, #about, #team  {display:none}
   .iframe1 iframe {
     height:5000px
@@ -147,9 +139,7 @@ iframe{
 </head>
 <body>
 
-  <div class="grid-container">
-    <div class='wrapper' style='width: 500%; height:50%'>
-    <div class='iframe1'>
+<div class='parent'>
     <div class='navBar' style='color:black; z-index:1'>
       <ul>
         <li><a class="active" href="https://sites.google.com/alice-smith.edu.my/epstudentgateway/home"><i> KLASS JOURNAL </i></a></li>
@@ -162,79 +152,27 @@ iframe{
     </div>
 <br>
 
- <!-- <div class="header">
+ <div class="header" style='height:120px;'>
+   <i> Where YOU can write about what you're passionate about to the KLASS community and beyond. <i>
+     <br>
+     <br>
+     <div style='font-size:10px;'>
+       Try out our new <input type="submit" name='submit' value='❤ Like'> buttons this week! Have a great summer!
+     </div>
+   </div>
 
-  </div> -->
-  <div>
-    <p> to z wei and annushka - i'll be adding the new like button here so watch this space to copy in </p>
+
+  <div class='articles'>
+    <div class='iframe1'>
+      <iframe src="latestArticles.html" name='myiframe' style='border:none'></iframe>
+    </div>
   </div>
+  <div class='footer' id='footer'>
 
-      <div class='iframe1'>
-        <iframe src="latestArticles.html" name='myiframe' style='border:none'></iframe>
-      </div>
-      </div>
-      <table>
-        <tr>
-          <td style='border:none'></td>
-          <td style='border-left:none'> FIND US</td>
-          <td><b> Secondary Campus </b> <br>
-              3 Jalan Equine, Taman Equine,<br>
-              43300 Seri Kembangan,<br>
-              Selangor, Malaysia<br>
-              Phone: +603 9543 3688<br>
-              Hours<br>
-              Monday—Friday: 7:30AM–5:00PM <br>
-            </td>
-            <td style='border-right:none'><b> Primary Campus </b> <br>
-                2 Jalan Bellamy,<br>
-                50460 Kuala Lumpur,<br>
-                Malaysia<br>
-                Phone: +603 2148 3674<br>
-              </td>
-            <td style='border:none'></td>
-            <td style='border-left:none'> CONTACT US </td>
-            <td>
-              <a href='https://www.facebook.com/AliceSmithSch/'><img src='facebook.jpg' style='width:40px; height:40px'>
-            </td>
-            <td>
-              <a href='https://twitter.com/AliceSmithSch'><img src='twitter.jpg' style='width:40px; height:40px'>
-            </td>
-        </tr>
-      </table>
-      </div>
-  <div class="footer" style='text-align: left; font-size: 10px; color:white; background-color:#1c1c1c'>
-
-      <table>
-        <tr>
-          <td style='border:none'></td>
-          <td style='border-left:none'> FIND US</td>
-          <td><b> Secondary Campus </b> <br>
-              3 Jalan Equine, Taman Equine,<br>
-              43300 Seri Kembangan,<br>
-              Selangor, Malaysia<br>
-              Phone: +603 9543 3688<br>
-              Hours<br>
-              Monday—Friday: 7:30AM–5:00PM <br>
-            </td>
-            <td style='border-right:none'><b> Primary Campus </b> <br>
-                2 Jalan Bellamy,<br>
-                50460 Kuala Lumpur,<br>
-                Malaysia<br>
-                Phone: +603 2148 3674<br>
-              </td>
-            <td style='border:none'></td>
-            <td style='border-left:none'> CONTACT US </td>
-            <td>
-              <a href='https://www.facebook.com/AliceSmithSch/'><img src='facebook.jpg' style='width:40px; height:40px'>
-            </td>
-            <td>
-              <a href='https://twitter.com/AliceSmithSch'><img src='twitter.jpg' style='width:40px; height:40px'>
-            </td>
-        </tr>
-      </table>
   </div>
 
 </div>
-
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 </body>
 </html>
