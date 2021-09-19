@@ -6,12 +6,15 @@
 
 <head>
 <title> The KLASS Journal </title>
-<link rel='stylesheet' href='styles.css'>
+
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
 <link rel="icon" href="kj.PNG">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel='stylesheet' href='styles.css'>
+<link rel='stylesheet' href='assembly.css'>
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Montserrat&family=Niconne&family=Prata&display=swap');
 .header { grid-area: header;
          background-attachment: fixed;
          background-position: center;
@@ -23,7 +26,6 @@
 .articles { grid-area: articles}
 .footer { grid-area: footer; }
 .navBar { grid-area: navBar;}
-
 
 .grid-container {
   display: grid;
@@ -129,7 +131,7 @@ iframe{
 @media only screen and (max-width: 1000px) {
   #updater, #about, #team  {display:none}
   .iframe1 iframe {
-    height:5000px
+    height:10000px
   }
   .footer {display:none}
 
@@ -139,32 +141,34 @@ iframe{
 </head>
 <body>
 
-<div class='parent'>
-    <div class='navBar' style='color:black; z-index:1'>
-      <ul>
-        <li><a class="active" href="https://sites.google.com/alice-smith.edu.my/epstudentgateway/home"><i> KLASS JOURNAL </i></a></li>
-        <li> <a href='latestArticles.html' target='myiframe'> HOME </a> </li>
-        <li> <a href='about.html' target='myiframe' id='about'> ABOUT </a> </li>
-        <li style='background-color:#bfb934'> <a href='archive.html' style='font:black'> ARCHIVE </a> </li>
-        <li > <a href='team.html' target='myiframe' id='team'> TEAM </a> </li>
-        <li style="float:right; background-color:black" id='updater' ><a href="index.html"> 7/7/2021 #4 Edition </a></li>
-      </ul>
-    </div>
+  <div class="topnav sticky">
+
+    <a class="active" href='https://www.facebook.com/theassemblysoupkitchen'>The KLASS Journal</a>
+    <div class="topnav-right" id='myTopnav'>
+    <a href="about.html" class='hvr-underline-from-left'>About</a>
+    <a href="archive.html" class='hvr-underline-from-left'>Archive</a>
+    <a href="team.html" class='hvr-underline-from-left'>Team</a>
+    <div class='dropdown'>
+    <a class="hamburger dropbtn" style='color:white;'>
+      ☰
+    </a>
+    <div class="dropdown-content">
+      <a href="about.html" class='hvr-underline-from-left'>About</a>
+      <a href="archive.html" class='hvr-underline-from-left'>Archive</a>
+      <a href="team.html" class='hvr-underline-from-left'>Team</a>
+  	</div>
+  </div>
+  </div>
+  </div>
 <br>
-
- <div class="header" style='height:120px;'>
-   <i> Where YOU can write about what you're passionate about to the KLASS community and beyond. <i>
-     <br>
-     <br>
-     <div style='font-size:10px;'>
-       Try out our new <input type="submit" name='submit' value='❤ Like'> buttons this week! Have a great summer!
-     </div>
-   </div>
-
+<div class='spacer' id='home'></div>
+<div style='height:80px; color:white;'>
+ Share what you're passionate about with the KLASS community.
+</div>
 
   <div class='articles'>
     <div class='iframe1'>
-      <iframe src="latestArticles.html" name='myiframe' style='border:none'></iframe>
+      <iframe src="latestArticles.html" name='myiframe' style='border:none; height:6000px'></iframe>
     </div>
   </div>
   <div class='footer' id='footer'>
