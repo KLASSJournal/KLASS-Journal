@@ -1,91 +1,84 @@
-<!DOCTYPE html>
 <html>
-<!-- YOU CAN IGNORE ALL THIS -->
-<head>
-<title>Thinking of achieveing herd immunity?</title>
-<link rel='stylesheet' href='styles.css'>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-<link rel="icon" href="kj.PNG">
 <style>
-.item3 { grid-area: articles}
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Montserrat&family=Niconne&family=Prata&display=swap');
+body {
+  display:flex;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif ;
 
-.grid-container {
-  display: grid;
-  grid-template-areas: 'articles';
-  grid-gap: 5px;
-  background-color: white;
-  padding: 10px;
+}
+.article {
+  width:600px;
+  text-align:left;
+  padding:5px;
+  padding-bottom:10px;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-/* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
+  .article {
+    width:100%;
+    padding-left:10px;
+    padding-right:10px;
   }
+
 }
 
-.grid-container > div {
-  background-color: white;
-  text-align: center;
-  padding: 20px 0;
+.title {
+  font-weight:bold;
+  font-size:50px;
+}
+.desc {
+  font-size:20px
 }
 
-table { border-collapse: separate;
-      border-spacing:10px}
+.genre {
+  font-size:30px;
+  color:red;
+  font-weight:bold;
+}
+.author {
+  font-weight:bold;
+  font-size:20px;
+}
 
-tr {border: none;}
+a {
+  text-decoration: none;
+  color:red;
+  border-color:Red;
+  border:1px solid red;
+  font-size:30px;
+}
 
-th, td {
-    word-wrap: break-word;
-    padding: 5px;
-    }
+.text {
+  font-size:20px
+}
 
+.images {
+  text-align:center;
+}
 </style>
-
-</head>
 <body>
-
-
-  <div class="grid-container">
-    <div class="item3">
-      <table class='center' width='60%' style='text-align:left'>
-        <tr>
-          <td style='font-size:20px; color:red; border-bottom:1px solid grey; vertical-align:center'>
-            <p><a class='readMore' href='index.html'> ◄ </a></p>
-            SUSTAINABILITY
-          </td>
-        </tr>
-        <tr>
-          <td style='font-size:70px'> Is Attaining Net Zero Carbon Emissions in the World today an ambitious reality? by <a href='22SDbio.html' style='color:red'><span> Siobhain Doyle '22 </span></a></td>
-
-        </tr>
-
-        <tr>
-          <td style='border-bottom:1px solid grey;' align='center'><img src='siobhain.jpg' width=90%></td>
-        </tr>
-        <tr>
-          <td style='font-size:21px; color:black; border-bottom:1px solid grey; line-height:1.5'>
-
+<div class='article'>
+  <a href='index.html'> ◄ </a>
+  <Br>
+    <Br>
+  <div class='genre'>
+    ENVIRONMENTAL AWARENESS
+  </div>
+  <div class='title'>
+Is attaining net zero carbon emissions in the world today an ambitious reality?
+</div>
+<div class='desc'>
+An engaging discussion of a sadly ongoing environmental issue
+</div>
+<Br>
+<div class='author'>
+By Siobhain Doyle
+</div>
+<br>
+<img src='siobhain.jpg' width='100%'>
+<Br>
+  <div class='text' style='padding-bottom:20px;'>
 
             <p>
 Toxic CO2 emissions are so prominent in our world today, with industrial processes  responsible for 248.8 million tonnes of pollution in 2019 being released in Malaysia alone and 33.1 billion metric tons of CO2 emissions on a global scale. At these unprecedented levels, exceeding the Global Carbon Budget and surpassing Paris Agreement target of staying below global warming at 1.5℃ this century, is seeming more and more likely. Increases in global mean temperatures will result in detrimental effects such as significant changes in the intensity, frequency and location of extreme events such as heat waves, flooding, wildfire and tropical cyclones. Scientists are fighting to save humanity by combating climate change through implementing different technologies such as CCS and renewable energies in order to prevent these deleterious circumstances from occurring. However, with the discovery of many new technologies, <mark>the main question lies in determining which strategy will have the greatest influence on lowering CO2 emissions alongside being highly cost effective and practical.</mark>
@@ -152,29 +145,7 @@ Replacing fossil fuels with renewable sources has clear benefits, such as increa
           </p>
 
 
+
 </div>
-          </td>
-          <td style='text-align:center; vertical-align:top; border-bottom:1px solid grey'>
-            <br>
-
-            <br>
-            <br>
-            <br>
-
-          </td>
-        </tr>
-        <tr>
-          <td>
-          
-
-
-          </td>
-        </tr>
-      </table>
-
-
-    </div>
-  </div>
-
 </body>
-</html
+</html>

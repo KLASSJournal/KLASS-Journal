@@ -128,14 +128,7 @@ iframe{
 .iframe1        {position:relative;}
 .iframe1 .ratio {display:block;width:100%;height:auto;}
 .iframe1 iframe {position:absolute;top:0;left:0;width:100%; height:3000px;}
-@media only screen and (max-width: 1000px) {
-  #updater, #about, #team  {display:none}
-  .iframe1 iframe {
-    height:10000px
-  }
-  .footer {display:none}
 
-}
 </style>
 
 </head>
@@ -164,7 +157,25 @@ iframe{
 <div class='spacer' id='home'></div>
 <div style='height:80px; color:white;'>
  Share what you're passionate about with the KLASS community.
+ <br>
+ <a class='commentButton' href='https://docs.google.com/forms/d/e/1FAIpQLSdH7fIYMKUb4SAH31Gn8tYhNn8I42FRkQ9G_A-74b5Ag3V-TA/viewform?usp=sf_link' >💬</a>
 </div>
+<style>
+a:hover {
+  text-decoration: none;
+}
+.commentButton {
+  font-size:30px;
+  border:1px solid red;
+  padding-left:20px;
+  padding-right:20px;
+  background-color:red
+}
+
+.commentButton:hover{
+  background-color:white;
+}
+</style>
 
   <div class='articles'>
     <div class='iframe1'>

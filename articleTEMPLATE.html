@@ -1,137 +1,232 @@
-<!DOCTYPE html>
 <html>
-<!-- YOU CAN IGNORE ALL THIS -->
-<head>
-<title>The underappreciated beauty of Arts</title>
-<link rel='stylesheet' href='styles.css'>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-<link rel="icon" href="kj.PNG">
 <style>
-.item3 { grid-area: articles}
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Montserrat&family=Niconne&family=Prata&display=swap');
+body {
+  display:flex;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif ;
 
-.grid-container {
-  display: grid;
-  grid-template-areas: 'articles';
-  grid-gap: 5px;
-  background-color: white;
-  padding: 10px;
+}
+.article {
+  width:600px;
+  text-align:left;
+  padding:5px;
+  padding-bottom:10px;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-/* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
+  .article {
+    width:100%;
+    padding-left:10px;
+    padding-right:10px;
   }
+
 }
 
-.grid-container > div {
-  background-color: white;
-  text-align: center;
-  padding: 20px 0;
+.title {
+  font-weight:bold;
+  font-size:50px;
+}
+.desc {
+  font-size:20px
 }
 
-table { border-collapse: separate;
-      border-spacing:10px}
+.genre {
+  font-size:30px;
+  color:red;
+  font-weight:bold;
+}
+.author {
+  font-weight:bold;
+  font-size:20px;
+}
 
-tr {border: none;}
+a {
+  text-decoration: none;
+  color:red;
+  border-color:Red;
+  border:1px solid red;
+  font-size:30px;
+}
 
-th, td {
-    word-wrap: break-word;
-    padding: 5px;
-    }
+.text {
+  font-size:20px
+}
 
+.images {
+  text-align:center;
+}
 </style>
-
-</head>
 <body>
-
-
-  <div class="grid-container">
-    <div class="item3">
-      <table class='center' width='60%' style='text-align:left'>
-        <tr>
-          <td style='font-size:20px; color:red; border-bottom:1px solid grey; vertical-align:center'>
-            <p><a class='readMore' href='index.html'> ◄ </a></p>
-            BIOLOGY
-          </td>
-        </tr>
-        <tr>
-          <td style='font-size:70px'> The underappreciated beauty of Arts by <a href='24MLbio.html' style='color:red'><span> Madelaine Lee '24 </span></a></td>
-          <td width='20%'align='center'></td>
-        </tr>
-        <tr style='padding:10px;'>
-          <td style='font-size:20px; border-bottom:1px solid grey;'> <br>
-            <div>An informative article by Madelaine highlights the importance of Arts in our world, and how important it is to never under - appreciate its beauty through many forms. </div>
-          </td>
-          <td style='border-bottom:1px solid grey;text-align:left; vertical-align:bottom;font-size:15px'><b></b></td>
-        </tr>
-        <tr>
-          <td style='border-bottom:1px solid grey;' align='center'><img src='arts.jpg' width=90%></td>
-          <td style='text-align:left; vertical-align:top;font-size:15px; border-bottom:1px solid grey'></td>
-        </tr>
-        <tr>
-          <td style='font-size:21px; color:black; border-bottom:1px solid grey; line-height:1.5'>
-<p> <span style='color:red'>Arts</span> - one of the most underappreciated aspects of life that we have today. You may have all heard of it, but many of you may not know the true beauty and effort that goes into creating Art in its many forms. Whether it comes through sculpture, painting, drawing,  music, dance , theatre, photography or cinema, many people from different cultures and areas around the world use Arts to express themselves, however this form of expression has been underappreciated by society, which should definitely not be the case. </p>
-<div class='bolder'>
-<p> Some of you may ask: why Arts? What’s so special about it, and why do you choose to study about it? </p>
-</div>
-<p>
-On average, around the world, the percentage of students who choose Arts as a career in the future is only 10%!  The majority of matriculating students go into the traditional disciplines of academics such as engineering and medicine. This is because, in an era where technological advancements are being integrated into our everyday lives, making high paying jobs more accessible to get into, it’s easy to lose sight of what the Arts has to offer. Sciences, Mathematics, the technological chase and Business seem to have been esteemed more highly than arts, as people who have a greater aptitude for them are considered smarter and more academically able; which is partly true. I understand that going into a career which surrounds STEM is challenging, however why can’t art be given a chance, and appreciated like them? <mark> Why can’t the arts be seen as a profitable and suitable career choice </mark>?
-</p>
-<p> Although it may not seem like it, arts are also very important to the future generation as well, just like academic careers, and it should be as profitable too.
-STEM/ academic skills are vital to the world we live in today, but technology alone, as Steve Jobs famously said, is not enough. A quote from him that sums this up perfectly - <mark>“We desperately need the expertise of those who are educated to the human, cultural, and social as well as computational”</mark>.
-</p>
-<div class='bolder'>
-<p>I repeat: Arts are just as important for our world ; the media for communication expresses the culture and society, attracts tourism and many more.</p>
-</div>
-<p>
-The under-appreciation of the arts has always been a problem in schools and society, and I believe it needs to be changed. Our world needs to be educated on the benefits that art has to offer. Not only does it help society as a whole, but it is also very important to our mental and emotional health, and that’s why we are all encouraged to be creative and have arts as a subject since we were young. Our teachers opened us up to a world of creative freedom where our imagination was limitless. According to the US National Institute of Health’s website, extensive research found that engagement with creative activities has the potential to contribute towards reducing stress and depression. Art also develops your creativity, making our brains think outside of the box and is basically the driving force behind all other learning as it requires integrated sensory, additional, cognitive, emotional and motor capabilities.
-</p>
-<p>
-Some of you may rebut and say that not everyone has the talent to do art, and I am stressing how somebody doesn’t have to be good at art to enjoy it. Art is done out of enjoyment and advocacy and impact upon a person.
-Art is also not only beneficial for mental health, it is also a crucial tool for our history. If you open a history book, you would have found paintings from hundreds and thousands of years ago, depicting and recording important events throughout history.
-</p>
-<p>
-Returning to the underappreciation of arts, potential career paths in the arts can be extremely overlooked in our society especially when STEM dominates the most “popular” fields of study. There is a vast amount of careers an individual can go into, including advertising, directing, animating, designing, illustration, art teaching and so much more. Artists dedicate their lives to making pieces of artworks that spark an interest in people, which is something not many people can do.
-To end this blog, I would like to challenge all of you to do something art-related during the upcoming summer holidays to initiate the creativity- sparks in you. Here is a link below for some ideas of activities you can do. <a href='https://www.abrakadoodle.com/blog/10-fun-art-activities-can-home/' style='color:red'>Have fun art- jamming!</a>
-</p>
-
-
-          </td>
-          <td style='vertical-align:top; border-bottom:1px solid grey;font-size:15px;padding-top:30px;'><b> Head back to our home page to like this post!</b></td>
-            <br>
-
-            <br>
-            <br>
-            <br>
-          </td>
-        </tr>
-
-      </table>
-
-
-    </div>
+<div class='article'>
+  <a href='index.html'> ◄ </a>
+  <Br>
+    <Br>
+  <div class='genre'>
+    CREATIVES
   </div>
+  <div class='title'>
+Artist Insight: Interview with Marissa Voo
+</div>
+<div class='desc'>
+Marissa Voo is a freelance illustrator and designer based in Malaysia. Learn more about her creative journey, her passion for illustration and her motivations to pursue art.
+</div>
+<Br>
+<div class='author'>
+By Isabela Ahmad Hamizan
+</div>
+<br>
+<img src='mv.jpg' width='100%'>
+<Br>
+  <div class='text'>
+    <Br>
+    <b>
+    Describe yourself in 50 words.
+    </b>
+    <br>
+    <br>
+    I typically introduce myself as an illustrator, but I actually work on a lot of other types of media content too. Most of the time, I agree to doing things despite being on unfamiliar ground, and I figure things out along the way. I'm a practical person with creative tendencies.
+    <br>
+    <br>
+    <b>
+    Describe your artwork.
+    </b>
+    <br>
+    <br>
+    Created with the intention to deliver a message.
+    <br>
+    <br>
+    <b>
+    Can you tell us about the process of making your work? How has your practice changed over time?
+    </b>
+    <br>
+    <br>
+    Most of the time, I do what immediately comes to mind. I'm still on the journey of learning to think outside the box and experimenting with new things. My practice has changed over time in a way that I've gotten better at understanding my clients' needs rather than my own wants.
+    <br>
+    <div class='images'>
+    <img src='mv2.jpg'>
+  </div>
+    <br>
+    <b>
+    Who or what are your biggest inspirations?
+    </b>
+    My parents are my biggest inspirations. My dad was a well-balanced creative who learned a lot of things on his own - and that inspires me to always keep exploring and trusting in my capabilities. My mom, on the other hand, has been a great support system, believing in me every step of the way (despite her occasional worrying!).
+    <br>
+    <br>
+    <b>
+    What visual references do you draw upon in your work?
+    </b>
+    <br>
+    <br>
+    Mostly, things that are familiar to me. I'm inspired by real life and rarely find comfort in fantasy.
 
+    <br>
+    <br>
+    <b>
+    Was there a pivotal moment when you decided to follow your path as an artist?
+    </b>
+    <br>
+    <div class='images'>
+    <img src='mv3.jpg'>
+  </div>
+    <br>
+    Not really - it happened over time, and it was a tug-of-war as I learned to find balance in the middle of my insecurities. I simply allowed life to take its natural course, and whilst I am where I am today, I accept that I may be on a completely different path in five years' time.
+    <br>
+    <br>
+    <b>
+    How do you navigate the art world?
+    </b>
+    <br>
+    <br>
+    Avoid comparison as far as you can. Create because you want to.
+    <br>
+    <br>
+    <b>
+    What was your first commission?
+    </b>
+    <br>
+    <br>
+    I don't remember - I've been commissioned by friends/family for small gigs even when I was in high school, and no doubt my skills were certainly not at all great, it gave me the opportunity to experience it even at a young age.
+
+    <br>
+    <br>
+    <b>
+    What’s your scariest experience in the art industry? And what was the most exciting one?
+    </b>
+    <br>
+    <br>
+
+    The scariest experience was probably at the beginning, when I decided to pursue it full-time. There was a lot of wondering if it would work, especially having to manage a business alone. The most exciting experience was seeing one of my illustrations (Bubble Tea Bingo) go viral!
+    <br>
+    <div class='images'>
+    <img src='mv4.jpg'>
+  </div>
+    <br>
+    <b>
+    Is there an artwork or creation you are most proud of? Why?
+    </b>
+    <br>
+    <br>
+    Yes, I have an editorial illustration that I did for The Washington Post last year. I'm most proud of it because of the time I spent working on it, and also being able to hear the Art Director's feedback on my work. It was rewarding, and an honour to work alongside someone who had worked with many other illustrators.
+    <br>
+    <br>
+    <b>
+    Is there a project that you have worked on that you are most proud of? What is your dream project?
+    </b>
+    <br>
+    <br>
+    Yes, being able to work on McDonald's Malaysia's social media content alongside my partner for about 2.5 years - it totalled up to more than 500 pieces of creative content. My dream project would probably be to open up my merch shop again.
+    <br>
+    <br>
+    <b>
+    Did you face any challenges to becoming an illustrator, developing yourself creatively or your career?
+    </b>
+    <br>
+    <div class='images'>
+    <img src='mv5.jpg'>
+  </div>
+    <br>
+    Most of the challenges I faced came from within, with feeling like I was inadequate or lacking. It's something I'm still learning to deal with, and it may be a lifelong struggle, but I'm grateful for all the opportunities I've had so far. <br>
+    <br>
+    <b>
+    What do you feel makes you distinct from other illustrators?
+    </b>
+    <br>
+    <br>
+    To be honest - I'm not entirely sure. I just do my best to create honest work, and hope for the best.
+    <br>
+    <br>
+    <b>
+    What has been the highlight of your career so far?
+    </b>
+    <br>
+    <br>
+    Being able to work with different brands and companies - some I never even imagined I would have the honour of working with.
+    <br>
+    <br>
+    <b>
+    What keeps you going and why do you do what you do? What’s your dream goal with your art?
+    </b>
+    <br>
+    <br>
+    It teaches me discipline, and the value of art. My ultimate goal is to be able to live out my purpose as a creative individual.
+    <br>
+    <br>
+    <b>
+
+    What advice would you give to a young artist following in your steps?
+    </b>
+    <br>
+    <br>
+
+    Keep your purpose and intention alive. Be inspired by others, but don't compare. Learn other soft skills like teamwork, communication, time management, problem-solving, etc. Keep going even when 'success' doesn't seem near. <br>
+    <br>
+
+    <b style='color:Red'>
+    Continue to follow Marissa's journey @moodoodles on Instagram.
+    </b>
+
+
+</div>
 </body>
 </html>
