@@ -1,148 +1,114 @@
-<!DOCTYPE html>
 <html>
-<!-- YOU CAN IGNORE ALL THIS -->
-<head>
-<title>Thinking of achieveing herd immunity?</title>
-<link rel='stylesheet' href='styles.css'>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-<link rel="icon" href="kj.PNG">
 <style>
-.item3 { grid-area: articles}
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Montserrat&family=Niconne&family=Prata&display=swap');
+body {
+  display:flex;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif ;
 
-.grid-container {
-  display: grid;
-  grid-template-areas: 'articles';
-  grid-gap: 5px;
-  background-color: white;
-  padding: 10px;
+}
+.article {
+  width:600px;
+  text-align:left;
+  padding:5px;
+  padding-bottom:10px;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-/* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
+  .article {
+    width:100%;
+    padding-left:10px;
+    padding-right:10px;
   }
+
 }
 
-.grid-container > div {
-  background-color: white;
-  text-align: center;
-  padding: 20px 0;
+.title {
+  font-weight:bold;
+  font-size:50px;
+}
+.desc {
+  font-size:20px
 }
 
-table { border-collapse: separate;
-      border-spacing:10px}
+.genre {
+  font-size:30px;
+  color:red;
+  font-weight:bold;
+}
+.author {
+  font-weight:bold;
+  font-size:20px;
+}
 
-tr {border: none;}
+a {
+  color:red;
+  border-color:Red;
 
-th, td {
-    word-wrap: break-word;
-    padding: 5px;
-    }
+}
 
+.text {
+  font-size:20px
+}
+
+.images {
+  text-align:center;
+}
 </style>
-
-</head>
 <body>
-
-
-  <div class="grid-container">
-    <div class="item3">
-      <table class='center' width='60%' style='text-align:left'>
-        <tr>
-          <td style='font-size:20px; color:red; border-bottom:1px solid grey; vertical-align:center'>
-            <p><a class='readMore' href='index.html'> ◄ </a></p>
-            REVIEWS
-          </td>
-        </tr>
-        <tr>
-          <td style='font-size:70px'> Can you imagine a world without maths? <a href='23ASbio.html' style='color:red'><span> Anya Sithambaram '23 </span></a></td>
-
-        </tr>
-
-        <tr>
-          <td style='border-bottom:1px solid grey;' align='center'><img src='maths.jpg' width=90%></td>
-        </tr>
-        <tr>
-          <td style='font-size:21px; color:black; border-bottom:1px solid grey; line-height:1.5'>
-
-    <p>             
-While going about our daily lives, it’s easy to take for granted the mathematics in the things that surround us, from computers to calendars and money matters to music technology. Although maths might not be your favorite school subject, there are many things around us that would not exist if it weren’t for the mathematics that we have today. For example, when is the last time you stayed indoors during a thunderstorm? Did you ever think to count yourself lucky (pun not intended) that the roof didn’t cave in on you? Probably not. But without the mathematics of precise measurements of lengths and calculations of loads, humans would not be able to construct buildings like the ones we are sitting in right now. We would quite probably still be living in caves!            
-    </p>
-    <p>
-So imagining a world without mathematics is clearly a mind-boggling feat.While many think that mathematics is a construct of humans, a language and tool to help us explain the physical and conceptual phenomena around us, in reality, scientists have shown that even <a href="https://www.livescience.com/61084-can-animals-count.html" style='color:red'>animals can have basic arithmetic abilities</a>, from bees that can count to <a href="https://www.livescience.com/2160-monkeys-math-humans.html"style='color:red'>monkeys that can perform addition</a>. <mark>So, if maths is so key to life on Earth, how could anyone live without it?</mark>
-    </p>        
-    <p>
-What if I told you that there are individuals among us who cannot see maths the way we do, who suffer from a condition which makes learning and comprehending maths particularly difficult for them, who live in a bubble where maths cannot exist? These people suffer from what is often compared to dyslexia for numbers - dyscalculia. Without doubt, this condition presents many challenges to dyscalculic individuals in daily life, way beyond not being able to understand what’s going on in maths class. 
-    </p>           
-    <p>
-It is estimated that dyscalculic people make up three to six percent of the population, a similar percentage to that of dyslexia. Individuals with dyscalculia have specific difficulty with visualising numbers and quantity, despite having average or above intelligence in other areas. In her <a href="https://www.youtube.com/watch?v=rlPFv_EDnvY&t=8s" style='color:red'>TEDx talk</a>, Line Rothmann compares explaining numbers to a dyscalculic person to explaining colour to a colourblind person - trying to teach them (or make them aware of) something that they have no concept of. 
-    </p>
-    <p>
-Dyscalculic individuals have difficulty identifying which numbers are larger than others, which makes specific aspects of life especially difficult for them. In <a href="https://www.understood.org/articles/en/7-surprising-ways-dyscalculia-affects-me-as-a-young-adult" style='color:red'>an article about the ways dyscalculia affects her</a>, Savannah Treviño-Casias describes the overwhelming anxiety that comes with having to make change at the cashier after a shopping trip. She tries to do mental maths to calculate how many “quarters, nickels, dimes, and pennies” she needs to pay, but at the sight of the line of impatient customers behind her, making the payment becomes an awful lot more stressful. Similarly, when it comes to deciding what and how much to buy at the grocery store, Line Rothmann describes taking the food items with yellow labels as often as possible, because yellow usually means a sale, and she otherwise has no way of knowing how much she can afford with her student budget. 
-    </p>   
-    <p>
-Even when it comes to games and entertainment, a dyscalculic person would neither be able to tell which football team is winning by the point scores on the TV screen, nor be able to participate in a light-hearted game of UNO with friends.             
-    </p>               
-    <p>
-<mark>But mathematical awareness goes beyond numbers alone.</mark> A major challenge for dyscalculic individuals is grasping the concept of time. As Line Rothmann explains it, “I have absolutely no sense of time; how fast it goes, how slow it goes, if it goes.” Like many dyscalculic people, she struggles to read the analogue clock, and convert between analogue and digital time. It is hard for people who have dyscalculia to estimate or judge the passing of time, which makes being on time for school and appointments rather difficult, making many dyscalculic people chronically late or early.             
-    </p>                
-    <p>
-But even time is not the only challenge of each journey to school and back. Dyscalculic individuals also have impaired spatial and directional awareness, which makes navigating and orienting themselves using maps extremely confusing. Hearing Google Maps instruct you to “Head Northeast. In 200 metres, turn right. Then, turn left at the fork” is confusing enough for the average human being, let alone not being able to tell North from South or left from right. As far as spatial awareness goes, dyscalculic people often find themselves bumping into doors, cabinets and countertops because they have a tough time judging distances and depth. To a clumsy person like myself, who regularly trips over my own feet anyway, not being able to tell how far away the door frame is from my shoulder sounds like a disaster waiting to happen! 
-    </p>    
-    <p>
-In a world where technological progress stems from mathematics, a time when systems and automation make the world go round, dyscalculic people are desperately trying to orient themselves in a world where they are unable to conceptualise the simple things that others around them take for granted. Although maths does not exist to them, they are living on the same planet as you and me. Maths, albeit puzzling to them, benefits all of us - dyscalculic or otherwise: calculators, alarms on our smartphones, smart maps and navigation tools - they make life infinitely easier for all of us. 
-    </p>  
-    <p>
-So the next time you curse at that equation on your page, or think twice about finishing that rotational symmetry worksheet, or reach for the classic  “when am I ever going to need to factorise quadratics when I grow up” excuse, remember how fortunate we are to be living in a world full of maths, a world where we are capable of learning and understanding quantity, time and space, and <mark>a world where my house will not collapse on me if I accidentally misjudge the width of the doorframe and walk straight into it. </mark>
-    </p>      
-    <br>
-<b>P.S. To any dyscalculic people reading this: for you to be living in a world like ours and struggle to tell the time or count chocolates, and still be able to overcome those challenges and excel in a plethora of other facets of life, you have my utmost respect!</b>
-    </br>
-
-        </div>
-          </td>
-          <td style='text-align:center; vertical-align:top; border-bottom:1px solid grey'>
-            <br>
-
-            <br>
-            <br>
-            <br>
-
-          </td>
-        </tr>
-        <tr>
-          <td>
-          
-
-
-          </td>
-        </tr>
-      </table>
-
-
-    </div>
+<div class='article'>
+  <a href='index.html'> ◄ </a>
+  <Br>
+    <Br>
+  <div class='genre'>
+    STEM
   </div>
+  <div class='title'>
+Can you imagine a world without maths?
+</div>
+<Br>
+<div class='author'>
+By Anya Sithambaram
+</div>
+<br>
+<img src='maths.jpg' width='100%'>
+<Br>
+  <div class='text'>
+
+      <p>
+  While going about our daily lives, it’s easy to take for granted the mathematics in the things that surround us, from computers to calendars and money matters to music technology. Although maths might not be your favorite school subject, there are many things around us that would not exist if it weren’t for the mathematics that we have today. For example, when is the last time you stayed indoors during a thunderstorm? Did you ever think to count yourself lucky (pun not intended) that the roof didn’t cave in on you? Probably not. But without the mathematics of precise measurements of lengths and calculations of loads, humans would not be able to construct buildings like the ones we are sitting in right now. We would quite probably still be living in caves!
+      </p>
+      <p>
+  So imagining a world without mathematics is clearly a mind-boggling feat.While many think that mathematics is a construct of humans, a language and tool to help us explain the physical and conceptual phenomena around us, in reality, scientists have shown that even <a href="https://www.livescience.com/61084-can-animals-count.html" style='color:red'>animals can have basic arithmetic abilities</a>, from bees that can count to <a href="https://www.livescience.com/2160-monkeys-math-humans.html"style='color:red'>monkeys that can perform addition</a>. <mark>So, if maths is so key to life on Earth, how could anyone live without it?</mark>
+      </p>
+      <p>
+  What if I told you that there are individuals among us who cannot see maths the way we do, who suffer from a condition which makes learning and comprehending maths particularly difficult for them, who live in a bubble where maths cannot exist? These people suffer from what is often compared to dyslexia for numbers - dyscalculia. Without doubt, this condition presents many challenges to dyscalculic individuals in daily life, way beyond not being able to understand what’s going on in maths class.
+      </p>
+      <p>
+  It is estimated that dyscalculic people make up three to six percent of the population, a similar percentage to that of dyslexia. Individuals with dyscalculia have specific difficulty with visualising numbers and quantity, despite having average or above intelligence in other areas. In her <a href="https://www.youtube.com/watch?v=rlPFv_EDnvY&t=8s" style='color:red'>TEDx talk</a>, Line Rothmann compares explaining numbers to a dyscalculic person to explaining colour to a colourblind person - trying to teach them (or make them aware of) something that they have no concept of.
+      </p>
+      <p>
+  Dyscalculic individuals have difficulty identifying which numbers are larger than others, which makes specific aspects of life especially difficult for them. In <a href="https://www.understood.org/articles/en/7-surprising-ways-dyscalculia-affects-me-as-a-young-adult" style='color:red'>an article about the ways dyscalculia affects her</a>, Savannah Treviño-Casias describes the overwhelming anxiety that comes with having to make change at the cashier after a shopping trip. She tries to do mental maths to calculate how many “quarters, nickels, dimes, and pennies” she needs to pay, but at the sight of the line of impatient customers behind her, making the payment becomes an awful lot more stressful. Similarly, when it comes to deciding what and how much to buy at the grocery store, Line Rothmann describes taking the food items with yellow labels as often as possible, because yellow usually means a sale, and she otherwise has no way of knowing how much she can afford with her student budget.
+      </p>
+      <p>
+  Even when it comes to games and entertainment, a dyscalculic person would neither be able to tell which football team is winning by the point scores on the TV screen, nor be able to participate in a light-hearted game of UNO with friends.
+      </p>
+      <p>
+  <mark>But mathematical awareness goes beyond numbers alone.</mark> A major challenge for dyscalculic individuals is grasping the concept of time. As Line Rothmann explains it, “I have absolutely no sense of time; how fast it goes, how slow it goes, if it goes.” Like many dyscalculic people, she struggles to read the analogue clock, and convert between analogue and digital time. It is hard for people who have dyscalculia to estimate or judge the passing of time, which makes being on time for school and appointments rather difficult, making many dyscalculic people chronically late or early.
+      </p>
+      <p>
+  But even time is not the only challenge of each journey to school and back. Dyscalculic individuals also have impaired spatial and directional awareness, which makes navigating and orienting themselves using maps extremely confusing. Hearing Google Maps instruct you to “Head Northeast. In 200 metres, turn right. Then, turn left at the fork” is confusing enough for the average human being, let alone not being able to tell North from South or left from right. As far as spatial awareness goes, dyscalculic people often find themselves bumping into doors, cabinets and countertops because they have a tough time judging distances and depth. To a clumsy person like myself, who regularly trips over my own feet anyway, not being able to tell how far away the door frame is from my shoulder sounds like a disaster waiting to happen!
+      </p>
+      <p>
+  In a world where technological progress stems from mathematics, a time when systems and automation make the world go round, dyscalculic people are desperately trying to orient themselves in a world where they are unable to conceptualise the simple things that others around them take for granted. Although maths does not exist to them, they are living on the same planet as you and me. Maths, albeit puzzling to them, benefits all of us - dyscalculic or otherwise: calculators, alarms on our smartphones, smart maps and navigation tools - they make life infinitely easier for all of us.
+      </p>
+      <p>
+  So the next time you curse at that equation on your page, or think twice about finishing that rotational symmetry worksheet, or reach for the classic  “when am I ever going to need to factorise quadratics when I grow up” excuse, remember how fortunate we are to be living in a world full of maths, a world where we are capable of learning and understanding quantity, time and space, and <mark>a world where my house will not collapse on me if I accidentally misjudge the width of the doorframe and walk straight into it. </mark>
+      </p>
+
+    <br>
+    <br>
+
 
 </body>
-</html
+</html>

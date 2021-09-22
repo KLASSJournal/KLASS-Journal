@@ -1,94 +1,85 @@
-<!DOCTYPE html>
 <html>
-<!-- YOU CAN IGNORE ALL THIS -->
-<head>
-<title>Thinking of achieveing herd immunity?</title>
-<link rel='stylesheet' href='styles.css'>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-<link rel="icon" href="kj.PNG">
 <style>
-.item3 { grid-area: articles}
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Montserrat&family=Niconne&family=Prata&display=swap');
+body {
+  display:flex;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif ;
 
-.grid-container {
-  display: grid;
-  grid-template-areas: 'articles';
-  grid-gap: 5px;
-  background-color: white;
-  padding: 10px;
+}
+.article {
+  width:600px;
+  text-align:left;
+  padding:5px;
+  padding-bottom:10px;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-/* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
+  .article {
+    width:100%;
+    padding-left:10px;
+    padding-right:10px;
   }
+
 }
 
-.grid-container > div {
-  background-color: white;
-  text-align: center;
-  padding: 20px 0;
+.title {
+  font-weight:bold;
+  font-size:50px;
+}
+.desc {
+  font-size:20px
 }
 
-table { border-collapse: separate;
-      border-spacing:10px}
+.genre {
+  font-size:30px;
+  color:red;
+  font-weight:bold;
+}
+.author {
+  font-weight:bold;
+  font-size:20px;
+}
 
-tr {border: none;}
+a {
+  text-decoration: none;
+  color:red;
+  border-color:Red;
+  border:1px solid red;
+  font-size:30px;
+}
 
-th, td {
-    word-wrap: break-word;
-    padding: 5px;
-    }
+.text {
+  font-size:20px
+}
 
+.images {
+  text-align:center;
+}
 </style>
-
-</head>
 <body>
+<div class='article'>
+  <a href='index.html'> ◄ </a>
+  <Br>
+    <Br>
+  <div class='genre'>
+    AI
+  </div>
+  <div class='title'>
+Reviewing "Opposite of Always" by Justin A.Reynolds
+</div>
+<Br>
+<div class='author'>
+By Priasha Choudhary
+</div>
+<br>
+<img src='opp.jpg' width='100%'>
+<Br>
+  <div class='text'>
 
 
-  <div class="grid-container">
-    <div class="item3">
-      <table class='center' width='60%' style='text-align:left'>
-        <tr>
-          <td style='font-size:20px; color:red; border-bottom:1px solid grey; vertical-align:center'>
-            <p><a class='readMore' href='index.html'> ◄ </a></p>
-            REVIEWS
-          </td>
-        </tr>
-        <tr>
-          <td style='font-size:70px'> A book Review on "Opposite of Always" by Justin A. Reynolds <a href='23PCbio.html' style='color:red'><span> Priasha Choudhary '23 </span></a></td>
-
-        </tr>
-
-        <tr>
-          <td style='border-bottom:1px solid grey;' align='center'><img src='opp.jpg' width=90%></td>
-        </tr>
-        <tr>
-          <td style='font-size:21px; color:black; border-bottom:1px solid grey; line-height:1.5'>
-
-
-<p>             
-Jack is the king of almost: almost valedictorian, almost semi-pro skateboarder, almost athlete and almost his best friend’s boyfriend.  He meets Kate at a party and as they bond over their mutual love of cereal until sunrise, Jack realises he's falling. Hard. It's a match made in heaven! Kate fits into his life perfectly. But,when he is stood up one night, he thinks Kate is just another “almost”. 
+<p>
+Jack is the king of almost: almost valedictorian, almost semi-pro skateboarder, almost athlete and almost his best friend’s boyfriend.  He meets Kate at a party and as they bond over their mutual love of cereal until sunrise, Jack realises he's falling. Hard. It's a match made in heaven! Kate fits into his life perfectly. But,when he is stood up one night, he thinks Kate is just another “almost”.
 </p>
 
 
@@ -97,17 +88,17 @@ Jack is the king of almost: almost valedictorian, almost semi-pro skateboarder, 
 </p>
 
 <p>
-When he learns that Kate actually has a genetic condition and is sick and in the hospital, Jack is determined to be the doting, supportive boyfriend.<br> 
+When he learns that Kate actually has a genetic condition and is sick and in the hospital, Jack is determined to be the doting, supportive boyfriend.<br>
 But Kate dies. <br>
 That should be it, the end of their love story. But Jack is sent back in time to the time and place they first met. That’s the universe’s sign! He has to save her this time! <br>
 But at what cost? His friends? His parents? Someone else's life?<br>
 Jack takes us along on his journey as he figures all this out.
 </p>
-            
+
 
 </p>
 <p>
-I’ll be honest, the “love at first sight” trope is cliché but I feel the themes Reynolds explores are not usually explored as skilfully. Jack’s experiences are relatable. Not that everybody ends-up-in-a-time-travel-loop part but the feeling of loss and grief are universally experienced. Most importantly, the feeling of loving someone so much that we are ready to do pretty much anything for them. However, we learn with Jack as he comes to the realisation that one may be losing a lot more in the process.            
+I’ll be honest, the “love at first sight” trope is cliché but I feel the themes Reynolds explores are not usually explored as skilfully. Jack’s experiences are relatable. Not that everybody ends-up-in-a-time-travel-loop part but the feeling of loss and grief are universally experienced. Most importantly, the feeling of loving someone so much that we are ready to do pretty much anything for them. However, we learn with Jack as he comes to the realisation that one may be losing a lot more in the process.
 </p>
 
 <p>
@@ -122,59 +113,36 @@ I love Kate. More than nearly anything <br>
 But more than all of those things combined?<br>
 I'm not sure”
 </p>
-        
+
 <p>
-Reynolds masterfully creates this inviting and conversational tone for the book’s narration. It’s from Jack’s first person point- of- view and Reynolds’ execution allows the reader to better understand Jack’s thoughts and it makes way for an overall immersive experience. The conversational nature of it also paves the way for some hilariously comedic and sincere moments.      
+Reynolds masterfully creates this inviting and conversational tone for the book’s narration. It’s from Jack’s first person point- of- view and Reynolds’ execution allows the reader to better understand Jack’s thoughts and it makes way for an overall immersive experience. The conversational nature of it also paves the way for some hilariously comedic and sincere moments.
 </p>
-       
+
 <p>
-This theme of friendship is explored to great depth and with great finesse. Jack’s relationship with his best friends, Jillian and Franny, is three dimensional and each time-loop proves its endurance. Each time, their friendship is put to the test and each time it proves to be a constant variable that will always be there. I feel that the friendship element is crucial in YA novels as readers can easily experience the feeling of being around great and  supportive friends. In “Opposite of Always” the trio’s friendship is central to the book’s plot and quality. Jillian and Franny are always there, by Jack’s side.         
+This theme of friendship is explored to great depth and with great finesse. Jack’s relationship with his best friends, Jillian and Franny, is three dimensional and each time-loop proves its endurance. Each time, their friendship is put to the test and each time it proves to be a constant variable that will always be there. I feel that the friendship element is crucial in YA novels as readers can easily experience the feeling of being around great and  supportive friends. In “Opposite of Always” the trio’s friendship is central to the book’s plot and quality. Jillian and Franny are always there, by Jack’s side.
 </p>
-        
+
 <p style='color:red'>
 <b><i> “The type of friendship, like the very best type of love, that never ends”</i> </b>
-</p> 
-        
-<p>
-“Opposite of Always” also explores different parental relationships through the character. Jack is an only child with two adoring parents ; they are a well functioning seemingly perfect family unit. However, Reynolds keeps in mind that not all families are like that. We see a parent who can't afford to keep the lights on, a father who disappears to another continent and another who has been in and out of jail. Reynolds tugs at the heartstrings and describes these different family units, focusing on the parent-child relationships and the effects on the characters. While this is not the book's main focus, I feel it's inclusion is valuable, especially in a book for teens/young adults - our relationship with our parents play a significant role in our lives. 
 </p>
-      
+
 <p>
-Reynolds has been applauded by critics for his inclusion of diversity in this book and its characters . Jack and Kate are African-American, Franny is of Latin descent and Jillian is shown to have roots in the Ivory Coast. In addition to this, the book raises awareness about sickle cell anemia (Kate’s genetic condition) and addresses the social issue of high medical costs and unaffordable treatments (mainly in America, the book’s setting)  
+“Opposite of Always” also explores different parental relationships through the character. Jack is an only child with two adoring parents ; they are a well functioning seemingly perfect family unit. However, Reynolds keeps in mind that not all families are like that. We see a parent who can't afford to keep the lights on, a father who disappears to another continent and another who has been in and out of jail. Reynolds tugs at the heartstrings and describes these different family units, focusing on the parent-child relationships and the effects on the characters. While this is not the book's main focus, I feel it's inclusion is valuable, especially in a book for teens/young adults - our relationship with our parents play a significant role in our lives.
 </p>
-     
+
+<p>
+Reynolds has been applauded by critics for his inclusion of diversity in this book and its characters . Jack and Kate are African-American, Franny is of Latin descent and Jillian is shown to have roots in the Ivory Coast. In addition to this, the book raises awareness about sickle cell anemia (Kate’s genetic condition) and addresses the social issue of high medical costs and unaffordable treatments (mainly in America, the book’s setting)
+</p>
+
 <p style='color:red'>
 <b><u>My final recommendation?</u></b>
 </p>
 
 <p>
-“The Opposite of Always” is an engrossing read that almost anyone can consider picking up.  It has love, conflict, family, friendships, drama, comedy and a dash of supernatural time travel . A heroic, courageous and relatable main character is accompanied by an extraordinary cast of diverse supporting characters, and coupled with Reynolds’ sophisticated and skillful storytelling, this book is definitely a win for me.  
+“The Opposite of Always” is an engrossing read that almost anyone can consider picking up.  It has love, conflict, family, friendships, drama, comedy and a dash of supernatural time travel . A heroic, courageous and relatable main character is accompanied by an extraordinary cast of diverse supporting characters, and coupled with Reynolds’ sophisticated and skillful storytelling, this book is definitely a win for me.
 </p>
-      
-      
-</div>
-          </td>
-          <td style='text-align:center; vertical-align:top; border-bottom:1px solid grey'>
-            <br>
-
-            <br>
-            <br>
-            <br>
-
-          </td>
-        </tr>
-        <tr>
-          <td>
-          
 
 
-          </td>
-        </tr>
-      </table>
-
-
-    </div>
-  </div>
 
 </body>
-</html
+</html>
